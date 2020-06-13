@@ -1,0 +1,180 @@
+/*
+Theme Name: connorocampo
+Text Domain: connorocampo.com
+Version: 1.0
+Description: Connor Ocampo's blog.
+Tags: responsive, minimal, font awesome, right sidebar
+Author: Connor Ocampo
+Author URI: https://connorocampo.dev
+*/
+
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #121212;
+  --forest: #3c5d5c;
+  --aqua: #73fbca;
+  --blue: #458de2;
+  --lightgrey: #f2f2f2;
+  --grey: #c4c4c4;
+  --white: #ffffff;
+  --width-content: 1200px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  font-family: "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* RESPONSIVE GLOBAL */
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+/* HEADER */
+
+header {
+  background: var(--black);
+  box-shadow: 0px 3px 25px #333;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  width: var(--width-content);
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0.375em;
+  padding-left: 1em;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+header nav ul li a {
+  color: var(--white);
+  display: inline-block;
+  font-weight: bold;
+  padding: 1em 2em;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: var(--aqua);
+}
+
+ul a.active {
+  background: blue;
+  color: var(--aqua);
+}
+
+@media (min-width: 800px) {
+  .toggle-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  .toggle-nav {
+    background: var(--black);
+    border: none;
+    color: var(--white);
+    position: absolute;
+    padding: 1.75em;
+    right: 0;
+  }
+
+  #nav.responsive {
+    display: block;
+    text-align: left;
+    width: 100vw;
+  }
+
+  #nav a {
+    padding: 1em;
+    width: 100%;
+  }
+
+  #nav.responsive a:hover {
+    background: var(--white);
+    color: var(--black);
+  }
+}
