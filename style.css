@@ -17,12 +17,14 @@ Author URI: https://connorocampo.dev
 }
 
 :root {
-  --black: #121212;
-  --forest: #3c5d5c;
   --aqua: #73fbca;
+  /* --black: #121212; */
+  --black: #0a0402;
   --blue: #458de2;
-  --lightgrey: #f2f2f2;
+  --forest: #3c5d5c;
   --grey: #c4c4c4;
+  --lightgrey: #f2f2f2;
+  --red: #ff0102;
   --white: #ffffff;
   --width-content: 1200px;
 }
@@ -141,11 +143,6 @@ header nav ul li a:hover {
   color: var(--aqua);
 }
 
-/* ul a.active {
-  background: blue;
-  color: yellow;
-} */
-
 .active {
   color: var(--aqua);
 }
@@ -154,8 +151,15 @@ header nav ul li a:hover {
 
 .main-front-page {
   align-items: center;
+  color: white;
+  color: wheat;
+  background-image: url(/images/keyboard.jpg);
+  background-position: center;
+  background-size: cover;
+  /* background: var(--black); */
   display: flex;
   height: 650px;
+  height: 85vh;
   justify-content: center;
 }
 
@@ -236,7 +240,7 @@ footer .widget .disclaimer {
 }
 
 .fa-heart {
-  color: var(--aqua);
+  color: var(--red);
   margin: 0 5px;
   animation-name: heart;
   animation-duration: 1.75s;
@@ -277,8 +281,12 @@ footer .widget .disclaimer {
     border: none;
     color: var(--white);
     position: absolute;
-    padding: 1.75em;
+    padding: 1.65em;
     right: 0;
+  }
+
+  .fa-ellipsis-v {
+    font-size: 18px;
   }
 
   #nav.responsive {
@@ -309,6 +317,7 @@ footer .widget .disclaimer {
 
   .tagline {
     font-size: 27px;
+    margin-left: 0;
     width: 300px;
   }
 
