@@ -1,6 +1,6 @@
 // ADD ACTIVE CLASS TO NAV LINK WHEN SELECTED
 
-function myFunction(e) {
+function addActive(e) {
   if (document.querySelector("#nav a.active") !== null) {
     document.querySelector("#nav a.active").classList.remove("active");
   }

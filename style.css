@@ -135,7 +135,7 @@ header nav ul li a:hover {
 
 ul a.active {
   background: blue;
-  color: var(--aqua);
+  color: yellow;
 }
 
 @media (min-width: 800px) {
