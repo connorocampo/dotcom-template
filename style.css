@@ -31,6 +31,10 @@ Author URI: https://connorocampo.dev
   color: #fff;
 }
 
+.color-blue {
+  color: var(--blue);
+}
+
 h1,
 h2,
 h3,
@@ -38,7 +42,10 @@ h4,
 h5,
 h6,
 body {
-  font-family: "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont,
+  /* font-family: "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: Helvetica, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 }
@@ -139,6 +146,108 @@ ul a.active {
   color: yellow;
 }
 
+/* FRONT PAGE */
+
+.main-front-page {
+  align-items: center;
+  display: flex;
+  height: 650px;
+  justify-content: center;
+}
+
+.front-page-content {
+  padding: 0 1em;
+}
+
+.tagline {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.15;
+  max-width: 1000px;
+  max-width: 996px;
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--black);
+  color: var(--white);
+  padding: 80px 1em 10px 1em;
+  padding: 80px 0 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--width-content);
+}
+
+.widgets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget {
+  padding: 0 1em;
+}
+
+footer .widget h2,
+footer .widget a,
+footer .widget p {
+  color: var(--white);
+}
+
+footer .widget h2 {
+  margin-bottom: 40px;
+  white-space: nowrap;
+}
+
+footer .widget a {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer .widget a:last-child {
+  margin-bottom: 0;
+}
+
+footer .widget a:hover {
+  color: var(--aqua);
+}
+
+footer .widget .disclaimer {
+  max-width: 300px;
+}
+
+.footer-credit {
+  max-width: var(--width-content);
+  padding-top: 150px;
+  padding-left: 1em;
+  margin: 0 auto;
+}
+
+.fa-heart {
+  color: var(--aqua);
+  margin: 0 5px;
+  animation-name: heart;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heart {
+  0% {
+    -webkit-transform: scale(0.85);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.85);
+  }
+}
+
 @media (min-width: 700px) {
   .toggle-nav {
     display: none;
@@ -146,6 +255,8 @@ ul a.active {
 }
 
 @media (max-width: 700px) {
+  /* HEADER  */
+
   nav {
     flex-direction: column;
   }
@@ -177,5 +288,34 @@ ul a.active {
   #nav.responsive a:hover {
     background: var(--white);
     color: var(--black);
+  }
+
+  /* FRONT PAGE  */
+
+  .main-front-page {
+    height: auto;
+  }
+
+  .front-page-content {
+    margin: 40px 0 50px 0;
+  }
+
+  .tagline {
+    font-size: 27px;
+    width: 300px;
+  }
+
+  /* FOOTER */
+
+  .widgets {
+    flex-direction: column;
+  }
+
+  .widget {
+    padding-top: 40px;
+  }
+
+  .widget:first-child {
+    padding-top: 0;
   }
 }
