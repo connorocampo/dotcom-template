@@ -141,9 +141,13 @@ header nav ul li a:hover {
   color: var(--aqua);
 }
 
-ul a.active {
+/* ul a.active {
   background: blue;
   color: yellow;
+} */
+
+.active {
+  color: var(--aqua);
 }
 
 /* FRONT PAGE */
@@ -163,7 +167,7 @@ ul a.active {
   font-size: 64px;
   font-weight: bold;
   line-height: 1.15;
-  max-width: 1000px;
+  margin-left: -4px;
   max-width: 996px;
 }
 
