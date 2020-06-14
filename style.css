@@ -440,6 +440,10 @@ footer .widget .disclaimer {
 }
 
 @media (max-width: 1250px) {
+  .page-content {
+    max-width: 100%;
+  }
+
   .sidebar {
     margin-top: 60px;
     width: 100%;
