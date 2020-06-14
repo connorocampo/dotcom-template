@@ -291,6 +291,11 @@ input#s {
   margin: 15px 0;
 }
 
+.page-content a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
 .sidebar {
   width: 300px;
 }
@@ -469,17 +474,28 @@ footer .widget .disclaimer {
     padding: 0.375em 0.5em;
   }
 
-  .toggle-nav {
+  #nav-btn {
     background: var(--black);
+    border: none;
+    color: white;
+    display: block;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /* .toggle-nav {
     border: none;
     color: var(--white);
     position: absolute;
     padding: 1.65em;
     right: 0;
-  }
+  } */
 
   .fa-ellipsis-v {
     font-size: 18px;
+    padding: 1.2em;
   }
 
   #nav.responsive {
