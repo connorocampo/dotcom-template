@@ -18,13 +18,15 @@ Author URI: https://connorocampo.dev
 
 :root {
   --aqua: #73fbca;
-  /* --black: #121212; */
-  --black: #0a0402;
+  --black: #141414;
+  /* --black: #0a0402; */
+  --black: #24282e;
   --blue: #458de2;
   --forest: #3c5d5c;
   --grey: #c4c4c4;
   --lightgrey: #f2f2f2;
   --red: #ff0102;
+  --wheat: #f5dfb3;
   --white: #ffffff;
   --width-content: 1200px;
 }
@@ -77,6 +79,39 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.table-container {
+  margin: 30px 0;
+}
+
+table {
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+th {
+  background: var(--black);
+  color: var(--lightgrey);
+  padding: 15px 25px;
+}
+
+td {
+  background: var(--lightgrey);
+  margin: 1px;
+  padding: 15px;
+}
+
+.table-container figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+blockquote {
+  border-left: 5px solid #73fbca;
+  margin: 30px 0;
+  padding: 1em 0 1em 25px;
 }
 
 /* RESPONSIVE GLOBAL */
@@ -153,13 +188,14 @@ header nav ul li a:hover {
   align-items: center;
   color: white;
   color: wheat;
-  background-image: url(/images/keyboard.jpg);
+  color: var(--black);
+  /* background-image: url("https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
   background-position: center;
   background-size: cover;
   /* background: var(--black); */
   display: flex;
   height: 650px;
-  height: 85vh;
+  /* height: 85vh; */
   justify-content: center;
 }
 
@@ -173,6 +209,45 @@ header nav ul li a:hover {
   line-height: 1.15;
   margin-left: -4px;
   max-width: 996px;
+}
+
+/* ARCHIVE PAGE */
+
+.archive-page {
+  display: flex;
+  justify-content: center;
+}
+
+.archive-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 80px 0 100px 0;
+  width: var(--width-content);
+}
+
+.archive-content {
+  /* background: wheat; */
+  width: 800px;
+}
+
+.archive-content h1 {
+  margin-bottom: 30px;
+}
+
+.archive-content h2,
+.archive-content h3 {
+  border-bottom: 1px solid #eaecef;
+  margin: 30px 0 10px 0;
+}
+
+.archive-content p {
+  margin: 15px 0;
+}
+
+.sidebar {
+  background: wheat;
+  width: 300px;
 }
 
 /* FOOTER */

@@ -17,19 +17,21 @@
   <body>
     <header>
       <nav>
-        <a href="/" class="color-white site-title">Connor Ocampo</a>
+        <a href="/front-page.html" class="color-white site-title"
+          >Connor Ocampo</a
+        >
         <ul id="nav" class="nav-links">
           <li>
-            <a href="/front-page.html">Home</a>
+            <a href="/front-page.html" class="nav-link">Home</a>
           </li>
           <li>
-            <a href="/archive.html">Blog</a>
+            <a href="/archive.html" class="nav-link">Blog</a>
           </li>
           <li>
-            <a href="/single.html">Single Page</a>
+            <a href="/single.html" class="nav-link">Single Page</a>
           </li>
           <li>
-            <a href="/page.html">Page</a>
+            <a href="/page.html" class="nav-link">Page</a>
           </li>
         </ul>
         <button class="toggle-nav" onclick="toggleNav()">
@@ -38,7 +40,40 @@
       </nav>
     </header>
     <!-- /header -->
-    <section class="main"></section>
+
+    <section></section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="widgets">
+          <div class="widget">
+            <h2>Quick Links</h2>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Stuff I Use</a>
+          </div>
+          <div class="widget">
+            <h2>Legal Stuff</h2>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Affiliates</a>
+          </div>
+          <div class="widget">
+            <h2>Disclaimer</h2>
+            <p class="disclaimer">
+              Don’t sue me, man. Everything in this website is my opinion and is
+              for entertainment purposes only.
+            </p>
+          </div>
+        </div>
+        <!-- /widgets  -->
+      </div>
+      <!-- /footer-content -->
+      <p class="footer-credit">
+        © 2020. Made with <i class="fa fa-heart" aria-hidden="true"></i> by me.
+      </p>
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
