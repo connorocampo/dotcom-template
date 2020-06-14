@@ -41,9 +41,9 @@
     </header>
     <!-- /header -->
 
-    <section class="archive-page">
-      <div class="archive-container">
-        <div class="archive-content">
+    <section class="page-page">
+      <div class="page-container">
+        <div class="page-content">
           <h1>Page Title</h1>
           <p>
             Don’t sue me, man. Everything in this website is my opinion and is
@@ -111,17 +111,87 @@
           </p>
         </div>
         <!-- /archive-content  -->
+
         <div class="sidebar">
           <div class="sidebar-widgets">
             <div class="sidebar-widget">
-              <h2>Search The Blog</h2>
+              <form
+                role="search"
+                method="get"
+                id="searchform"
+                class="searchform"
+                action="https://wpbinge.com"
+              >
+                <div>
+                  <div class="search-box">
+                    <h2 class="sidebar-header">
+                      <label class="screen-reader-text" for="s"
+                        >Search The Blog</label
+                      >
+                    </h2>
+                    <input
+                      type="text"
+                      name="s"
+                      id="s"
+                      role="searchbox"
+                      arial-label="search"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="search-button"
+                    aria-label="search the blog button"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
             </div>
+            <!-- /sidebar-widget  -->
+            <div class="sidebar-widget">
+              <h2>Recent Posts</h2>
+              <ul>
+                <li>
+                  <a href="#" class="sidebar-recent-post"
+                    >My dad once told me, laugh and the world laughs with
+                    you.</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="sidebar-recent-post"
+                    >My dad once told me, laugh and the world laughs with
+                    you.</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="sidebar-recent-post"
+                    >My dad once told me, laugh and the world laughs with
+                    you.</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- /sidebar-widget -->
+
+            <div class="sidebar-widget">
+              <h2>Tags</h2>
+              <a href="#" class="tag">#Personal Finance</a>
+              <a href="#" class="tag tag-blue">#Music</a>
+              <a href="#" class="tag">#Health</a>
+              <a href="#" class="tag tag-hotpink">#Fitness</a>
+              <a href="#" class="tag">#Plant-based</a>
+              <a href="#" class="tag">#LGBTQ+</a>
+              <a href="#" class="tag">#Tech</a>
+            </div>
+            <!-- /sidebar-widget -->
           </div>
+          <!-- /sidebar-widgets -->
         </div>
+        <!-- /sidebar -->
       </div>
-      <!-- /archive-container  -->
+      <!-- /page-container  -->
     </section>
-    <!-- /archive-page -->
+    <!-- /page-page -->
 
     <footer>
       <div class="footer-content">

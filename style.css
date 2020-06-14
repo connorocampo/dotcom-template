@@ -211,43 +211,121 @@ header nav ul li a:hover {
   max-width: 996px;
 }
 
-/* ARCHIVE PAGE */
+/* SIDEBAR */
 
-.archive-page {
+.search-box {
+  display: inline-block;
+  height: 40px;
+  width: 98%;
+}
+
+input#s {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: var(--font-size-body-desktop);
+  height: 40px;
+  padding: 0 0.5em;
+  width: 100%;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  display: inline;
+  margin-left: -45px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+}
+
+.fa-search {
+  color: var(--black);
+  font-size: 16px;
+}
+
+/* PAGE PAGE */
+
+.page-page {
   display: flex;
   justify-content: center;
 }
 
-.archive-container {
+.page-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 80px 0 100px 0;
+  padding: 0 1em;
+
   width: var(--width-content);
 }
 
-.archive-content {
+.page-content {
   /* background: wheat; */
   width: 800px;
 }
 
-.archive-content h1 {
+.page-content h1 {
   margin-bottom: 30px;
 }
 
-.archive-content h2,
-.archive-content h3 {
+.page-content h2,
+.page-content h3 {
   border-bottom: 1px solid #eaecef;
   margin: 30px 0 10px 0;
 }
 
-.archive-content p {
+.page-content p {
   margin: 15px 0;
 }
 
 .sidebar {
   background: wheat;
   width: 300px;
+}
+
+.sidebar-recent-post {
+  color: var(--black);
+  line-height: 1.75;
+}
+
+.sidebar ul li a {
+  color: var(--black);
+  font-style: italic;
+  line-height: 1.75;
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--aqua);
+  background: linear-gradient(#73fbca, #73fbca) no-repeat;
+  background-position: bottom;
+  /* 	Change the second value */
+  background-size: 100% 50%;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid #eaecef;
+  list-style-type: none;
+  padding-bottom: 15px;
+}
+
+.sidebar ul li:not(:first-child) {
+  margin-top: 10px;
+}
+
+.tag {
+  background: var(--blue);
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
 }
 
 /* FOOTER */
