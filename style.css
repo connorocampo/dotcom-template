@@ -124,7 +124,7 @@ blockquote cite {
 
 /* RESPONSIVE GLOBAL */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 30px;
   }
@@ -414,7 +414,7 @@ input#s {
 }
 
 .excerpt {
-  margin: 20px 0 30px 0;
+  margin: 20px 0;
 }
 
 .read-more {
@@ -521,7 +521,7 @@ footer .widget .disclaimer {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   #nav-btn {
     display: none;
   }
@@ -549,6 +549,12 @@ footer .widget .disclaimer {
     margin: 0 1em;
   }
 
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   /* SIDEBARS */
   .sidebar-2 {
     margin: 0 1em;
@@ -569,7 +575,7 @@ footer .widget .disclaimer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   /* HEADER  */
 
   nav {
@@ -661,6 +667,10 @@ footer .widget .disclaimer {
 
   .date {
     margin-top: 0;
+  }
+
+  .tag {
+    display: none;
   }
 
   .excerpt {
