@@ -56,6 +56,7 @@ body {
 
 h1 {
   font-size: 48px;
+  line-height: 1.25;
 }
 
 h2 {
@@ -150,13 +151,11 @@ blockquote cite {
 
 header {
   background: var(--black);
-  /* box-shadow: 0px 3px 25px #333; */
   display: flex;
   justify-content: center;
 }
 
 nav {
-  /* background: pink; */
   align-items: center;
   display: flex;
   width: var(--width-content);
@@ -165,9 +164,6 @@ nav {
 .site-title {
   font-size: 28px;
   font-weight: bold;
-  /* padding: 0.375em 0; */
-  /* margin: 0.375em; */
-  /* margin: 0 1em; */
   width: 100%;
   white-space: nowrap;
 }
@@ -201,15 +197,8 @@ header nav ul li a:hover {
 
 .main-front-page {
   align-items: center;
-  color: white;
-  color: wheat;
-  color: var(--black);
-  /* background-image: url("https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
-  background-position: center;
-  background-size: cover;
   display: flex;
   height: 650px;
-  /* height: 85vh; */
   justify-content: center;
 }
 
@@ -270,7 +259,6 @@ input#s {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 80px 1em 100px 1em;
-  /* padding: 0 1em; */
   width: var(--width-content);
 }
 
@@ -283,12 +271,15 @@ input#s {
 }
 
 .page-content h2,
-.page-content h3 {
+.page-content h3,
+.single h2,
+.single h3 {
   border-bottom: 1px solid #eaecef;
   margin: 30px 0 10px 0;
 }
 
-.page-content p {
+.page-content p,
+.single p {
   margin: 15px 0;
 }
 
@@ -443,7 +434,7 @@ input#s {
 }
 
 .excerpt {
-  margin: 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 .read-more {
@@ -464,6 +455,19 @@ input#s {
 
 .pagination .screen-reader-text {
   margin-right: 110px;
+}
+
+/* SINGLE PAGE */
+
+.single-container {
+  /* background: wheat; */
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 80px 0 100px 0;
+}
+
+.featured-image {
+  width: 100%;
 }
 
 /* FOOTER */
@@ -578,12 +582,6 @@ footer .widget .disclaimer {
     margin: 0 1em;
   }
 
-  /* .post-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  } */
-
   /* SIDEBARS */
   .sidebar-2 {
     margin: 0 1em;
@@ -595,6 +593,12 @@ footer .widget .disclaimer {
 
   .sidebar-2-widget {
     width: 100%;
+  }
+
+  /* SINGLE */
+  .single-container {
+    /* margin: 0 1em; */
+    padding: 30px 1em 100px 1em;
   }
 }
 
