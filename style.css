@@ -605,6 +605,7 @@ footer .widget .disclaimer {
     color: var(--aqua);
     font-size: 18px;
     padding: 1.2em;
+    padding: 1.2em 1.5em;
   }
 
   #nav.responsive {
@@ -669,7 +670,7 @@ footer .widget .disclaimer {
     margin-top: 0;
   }
 
-  .tag {
+  .post-content .tag {
     display: none;
   }
 
