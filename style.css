@@ -422,6 +422,12 @@ input#s {
   margin-bottom: 50px;
 }
 
+.post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .post-image {
   margin-right: 70px;
 }
@@ -572,11 +578,11 @@ footer .widget .disclaimer {
     margin: 0 1em;
   }
 
-  .post-content {
+  /* .post-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  } */
 
   /* SIDEBARS */
   .sidebar-2 {
