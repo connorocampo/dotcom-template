@@ -368,6 +368,29 @@ input#s {
   margin-top: 10px;
 }
 
+.social-media-link {
+  background: var(--black);
+  color: var(--lightgrey);
+  border-radius: 50%;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+}
+
+.social-media-link:hover {
+  color: var(--aqua);
+}
+
+.social-media-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-media-icon {
+  font-size: 24px;
+  margin-top: 11px;
+  margin-left: 11.25px;
+}
+
 .tag {
   background: var(--blue);
   border-radius: 5px;
