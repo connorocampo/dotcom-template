@@ -36,3 +36,13 @@ $(function () {
     }
   });
 });
+
+// SHARE CURRENT PAGE VIA EMAIL
+
+// function emailCurrentPage() {
+//   window.location.href =
+//     "mailto:?subject=" +
+//     document.title +
+//     "&body=" +
+//     escape(window.location.href);
+// }

@@ -123,6 +123,10 @@ blockquote cite {
   margin-top: 10px;
 }
 
+hr {
+  border: 1px solid #eaecef;
+}
+
 /* RESPONSIVE GLOBAL */
 
 @media (max-width: 800px) {
@@ -468,6 +472,28 @@ input#s {
 
 .featured-image {
   width: 100%;
+}
+
+.single h1 {
+  margin-top: 15px;
+}
+
+.post-credit {
+  display: inline-block;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.share-post {
+  margin-top: 50px;
+}
+
+.share-post-text {
+  font-size: 16px;
+}
+
+.share-post-separator {
+  margin: -15px 0 10px 0;
 }
 
 /* FOOTER */
