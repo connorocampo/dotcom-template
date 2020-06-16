@@ -67,7 +67,7 @@
           entertainment.
         </p>
         <h3>Header 3</h3>
-        <p>
+        <p id="myText">
           Don’t sue me, man. Everything in this website is my opinion website is
           my opinion website is my opinion and is for entertainment purposes
           only. Don’t sue me, man. Everything in this website is my opinion and
@@ -76,13 +76,18 @@
         <span class="post-credit">— Connor Ocampo</span>
         <div class="share-post">
           <p class="share-post-text">share</p>
-          <a
-            href="javascript:emailCurrentPage()"
+
+          <button onclick="sendMail(); return false" class="share-button">
+            <i class="fa fa-envelope-o share-icon"></i>
+          </button>
+
+          <!-- <a
+            href="mailto:test?body=%3Ca%20href%3D%22http%3A%2F%2F127.0.0.1%3A5500%2Fsingle.html%22%3Elink%3C%2Fa%3E"
             class="social-media-link"
             target="_blank"
             aria-label="Share by Email"
             ><i class="fa fa-envelope-o social-media-icon"></i
-          ></a>
+          ></a> -->
         </div>
         <!-- /share-post -->
       </article>

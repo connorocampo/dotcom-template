@@ -499,6 +499,19 @@ input#s {
   padding-bottom: 5px;
 }
 
+.share-button {
+  border: none;
+  background: transparent;
+}
+
+.fa-envelope-o {
+  font-size: 18px;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  padding: 0.5em;
+}
+
 /* FOOTER */
 
 footer {
@@ -565,6 +578,7 @@ footer .widget .disclaimer {
 
 .fa-heart {
   color: var(--red);
+  color: #fdc112;
   margin: 0 5px;
   animation-name: heart;
   animation-duration: 1.75s;
