@@ -504,6 +504,10 @@ input#s {
   background: transparent;
 }
 
+.share-button:hover {
+  cursor: pointer;
+}
+
 .fa-envelope-o {
   font-size: 18px;
   background: black;

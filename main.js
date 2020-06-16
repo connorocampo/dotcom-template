@@ -39,20 +39,28 @@ $(function () {
 
 // SHARE CURRENT PAGE VIA EMAIL
 
-function sendMail() {
-  var link =
-    "mailto:?" +
-    "&subject=" +
-    escape("Hey! Check out this article: ") +
-    document.title +
-    "&body=" +
-    escape("Found this article I think you might find interesting: ") +
-    escape(window.location.href);
-  window.location.href = link;
-}
+// function sendMail() {
+//   var link =
+//     "mailto:?" +
+//     "&subject=" +
+//     escape("Hey! Check out this article: ") +
+//     document.title +
+//     "&body=" +
+//     escape("Found this article I think you might find interesting: ") +
+//     escape(window.location.href);
+//   window.location.href = link;
+// }
 
-function sendMail() {
-  var link =
+// function emailCurrentPage() {
+//   window.location.href =
+//     "mailto:?subject=" +
+//     document.title +
+//     "&body=" +
+//     escape(window.location.href);
+// }
+
+function emailCurrentPage() {
+  window.location.href =
     "mailto:?" +
     "&subject=" +
     escape("Hey! Check out this article: ") +
@@ -60,5 +68,4 @@ function sendMail() {
     "&body=" +
     escape("Found this article I think you might find interesting: ") +
     escape(window.location.href);
-  window.location.href = link;
 }
